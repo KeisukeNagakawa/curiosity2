@@ -1,15 +1,18 @@
+{% load static %}
+
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/driver_seat.css' %}">
+
 </head>
 <body>
 
 <div class="container">
-    <br>
     <div class="row">
         <div class="col-md-4 text-center offset-4">
-            <h2>test</h2>
+            <h2>Demo</h2>
         </div>
     </div>
     <br>
@@ -17,27 +20,27 @@
         <div class="col-md-4 text-center">
         </div>
         <div class="col-md-4 text-center">
-            前進
+            <button type="button" class="btn btn-secondary">⬆</button>
         </div>
         <div class="col-md-4 text-center">
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4 text-center">
-            左旋回
+        <div class="col-md-5 text-right">
+            <button type="button" class="btn btn-secondary">⬅</button>
         </div>
-        <div class="col-md-4 text-center">
-            停止
+        <div class="col-md-2 text-center">
+            <button type="button" class="btn btn-danger">STOP</button>
         </div>
-        <div class="col-md-4 text-center">
-            右旋回
+        <div class="col-md-5 text-left">
+            <button type="button" class="btn btn-secondary">➡</button>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4 text-center">
         </div>
         <div class="col-md-4 text-center">
-            後退
+            <button type="button" class="btn btn-secondary">⬇</button>
         </div>
         <div class="col-md-4 text-center">
         </div>
