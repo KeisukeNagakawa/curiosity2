@@ -8,7 +8,25 @@ def drivers_view(request):
 
 
 def forward(request):
-    # Code to run
-    # More code to run
-    print("forward function is called")
+    print("forward function is called in view.py")
+    return HttpResponse('Return data to ajax call')
+
+
+def backward(request):
+    print("backward function is called in view.py")
+    return HttpResponse('Return data to ajax call')
+
+
+def left(request):
+    print("left function is called in view.py")
+    return HttpResponse('Return data to ajax call')
+
+
+def right(request):
+    print("right function is called in view.py")
+    return HttpResponse('Return data to ajax call')
+
+
+def stop(request):
+    print("stop function is called in view.py")
     return HttpResponse('Return data to ajax call')

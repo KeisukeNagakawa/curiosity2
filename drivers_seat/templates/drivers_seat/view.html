@@ -15,8 +15,6 @@
 {#</form>#}
 
 <body>
-<input type='button' value='run function' onclick='runScript()'>
-</body>
 
 
 <div class="container">
@@ -30,37 +28,27 @@
         <div class="col-md-4 text-center">
         </div>
         <div class="col-md-4 text-center">
-            <a href="/forward">
-                <button type="button" class="btn btn-secondary">⬆</button>
-            </a>
+            <input type='button' value='⬆' onclick='forward()' class="btn btn-secondary"/>
         </div>
         <div class="col-md-4 text-center">
         </div>
     </div>
     <div class="row">
         <div class="col-md-5 text-right">
-            <a href="/left">
-                <button type="button" class="btn btn-secondary">⬅</button>
-            </a>
+            <input type='button' value='⬅' onclick='left()' class="btn btn-secondary"/>
         </div>
         <div class="col-md-2 text-center">
-            <a href="/stop">
-                <button type="button" class="btn btn-danger">STOP</button>
-            </a>
+            <input type='button' value='STOP' onclick='stop()' class="btn btn-secondary"/>
         </div>
         <div class="col-md-5 text-left">
-            <a href="/right">
-                <button type="button" class="btn btn-secondary">➡</button>
-            </a>
+            <input type='button' value='➡' onclick='right()' class="btn btn-secondary"/>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4 text-center">
         </div>
         <div class="col-md-4 text-center">
-            <a href="/backward">
-                <button type="button" class="btn btn-secondary">⬇</button>
-            </a>
+            <input type='button' value='⬇' onclick='backward()' class="btn btn-secondary"/>
         </div>
         <div class="col-md-4 text-center">
         </div>
