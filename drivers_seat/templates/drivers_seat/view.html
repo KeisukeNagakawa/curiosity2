@@ -5,9 +5,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/driver_seat.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 <body>
+</body>
+{#<form action="{% url 'forward' %}/" method="GET">#}
+{#    <input id="submit" type="button" value="Click" class="btn btn-secondary"/>#}
+{#</form>#}
+
+<body>
+<input type='button' value='run function' onclick='runScript()'>
+</body>
+
 
 <div class="container">
     <div class="row">
@@ -56,6 +66,8 @@
         </div>
     </div>
 </div>
+
+<script src="{% static 'js/button_click.js' %}"></script>
 
 </body>
 </html>
