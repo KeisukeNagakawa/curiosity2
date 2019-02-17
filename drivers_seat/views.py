@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from . import two_motors as t
+
+GPIO=t.PWM()
 
 
 # Create your views here.
@@ -9,6 +12,8 @@ def drivers_view(request):
 
 def forward(request):
     print("forward function is called in view.py")
+    GPIO.cdc(20, 'L')
+    GPIO.cdc(20, 'R')
     return HttpResponse('Return data to ajax call')
 
 
@@ -29,4 +34,6 @@ def right(request):
 
 def stop(request):
     print("stop function is called in view.py")
+    GPIO.cdc(0, 'L')
+    GPIO.cdc(0, 'R')
     return HttpResponse('Return data to ajax call')
