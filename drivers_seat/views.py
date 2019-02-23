@@ -19,16 +19,22 @@ def forward(request):
 
 def backward(request):
     print("backward function is called in view.py")
+    GPIO.cdc(-20, 'L')
+    GPIO.cdc(-20, 'R')
     return HttpResponse('Return data to ajax call')
 
 
 def left(request):
     print("left function is called in view.py")
+    GPIO.cdc(-20, 'L')
+    GPIO.cdc(20, 'R')
     return HttpResponse('Return data to ajax call')
 
 
 def right(request):
     print("right function is called in view.py")
+    GPIO.cdc(20, 'L')
+    GPIO.cdc(-20, 'R')
     return HttpResponse('Return data to ajax call')
 
 

@@ -41,6 +41,7 @@ class PWM:
         G.cleanup()
 
     def cdc(self, x, LorR):
+        print('cdc function is called')
         if LorR=='R':
             if x>=0:
                 G.output(RENABL, 0)
