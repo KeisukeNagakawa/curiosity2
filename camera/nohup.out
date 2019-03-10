@@ -1,0 +1,161 @@
+Traceback (most recent call last):
+  File "send_server.py", line 84, in <module>
+    with picamera.PiCamera(resolution='640x480', framerate=24) as camera:
+  File "/usr/lib/python3/dist-packages/picamera/camera.py", line 433, in __init__
+    self._init_preview()
+  File "/usr/lib/python3/dist-packages/picamera/camera.py", line 513, in _init_preview
+    self, self._camera.outputs[self.CAMERA_PREVIEW_PORT])
+  File "/usr/lib/python3/dist-packages/picamera/renderers.py", line 558, in __init__
+    self.renderer.inputs[0].connect(source).enable()
+  File "/usr/lib/python3/dist-packages/picamera/mmalobj.py", line 2211, in enable
+    mmal.mmal_connection_enable(self._connection),
+KeyboardInterrupt
+192.168.11.3 - - [10/Mar/2019 16:27:31] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 63660): [Errno 104] Connection reset by peer
+192.168.11.3 - - [10/Mar/2019 16:29:45] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 63739): [Errno 104] Connection reset by peer
+192.168.11.3 - - [10/Mar/2019 16:30:15] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 63754): [Errno 104] Connection reset by peer
+192.168.11.3 - - [10/Mar/2019 16:30:36] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 16:30:37] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 63761): [Errno 104] Connection reset by peer
+WARNING:root:Removed streaming client ('192.168.11.3', 63763): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 16:30:50] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 16:31:34] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 16:34:14] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 63814): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 63857): [Errno 104] Connection reset by peer
+192.168.11.3 - - [10/Mar/2019 16:34:23] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 63869): [Errno 104] Connection reset by peer
+192.168.11.3 - - [10/Mar/2019 16:34:28] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 63782): [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "send_server.py", line 92, in <module>
+    server.serve_forever()
+  File "/usr/lib/python3.5/socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/usr/lib/python3.5/selectors.py", line 376, in select
+    fd_event_list = self._poll.poll(timeout)
+KeyboardInterrupt
+192.168.11.3 - - [10/Mar/2019 18:28:10] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 65253): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 18:49:59] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 65462): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 20:57:58] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 20:58:02] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 50138): [Errno 104] Connection reset by peer
+WARNING:root:Removed streaming client ('192.168.11.3', 50140): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 21:01:57] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 50240): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 21:02:01] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 50248): [Errno 104] Connection reset by peer
+192.168.11.9 - - [10/Mar/2019 21:49:24] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.9', 54213): [Errno 104] Connection reset by peer
+192.168.11.9 - - [10/Mar/2019 21:50:00] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.9', 54236): [Errno 104] Connection reset by peer
+192.168.11.9 - - [10/Mar/2019 22:34:32] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.9', 54580): [Errno 104] Connection reset by peer
+192.168.11.9 - - [10/Mar/2019 22:37:47] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.9', 54617): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 22:55:42] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 22:56:26] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 50610): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 50624): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 23:01:17] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 23:01:18] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 50687): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 50689): [Errno 113] No route to host
+192.168.11.3 - - [10/Mar/2019 23:33:02] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 23:37:20] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 51090): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 51129): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 23:40:30] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 23:40:31] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 51884): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 23:41:56] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 51886): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 23:42:52] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 52233): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 52458): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 23:43:14] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 52557): [Errno 104] Connection reset by peer
+192.168.11.3 - - [10/Mar/2019 23:43:41] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 23:43:59] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 52673): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 52748): [Errno 104] Connection reset by peer
+192.168.11.3 - - [10/Mar/2019 23:44:44] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 23:44:45] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 52798): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 23:47:17] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 52800): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 53212): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 23:49:50] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 23:50:43] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 53853): [Errno 104] Connection reset by peer
+192.168.11.3 - - [10/Mar/2019 23:50:45] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 54071): [Errno 104] Connection reset by peer
+WARNING:root:Removed streaming client ('192.168.11.3', 54077): [Errno 104] Connection reset by peer
+192.168.11.3 - - [10/Mar/2019 23:51:17] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 23:51:18] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 54215): [Errno 104] Connection reset by peer
+WARNING:root:Removed streaming client ('192.168.11.3', 54221): [Errno 32] Broken pipe
+192.168.11.3 - - [10/Mar/2019 23:51:26] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [10/Mar/2019 23:51:27] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 54261): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 54263): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:02:15] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 56999): [Errno 104] Connection reset by peer
+192.168.11.3 - - [11/Mar/2019 00:02:46] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [11/Mar/2019 00:02:57] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 57135): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 57183): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:03:42] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [11/Mar/2019 00:03:43] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 57368): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:03:44] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 57378): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 57380): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:03:52] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [11/Mar/2019 00:03:54] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 57431): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:04:03] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 57447): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 57481): [Errno 104] Connection reset by peer
+192.168.11.3 - - [11/Mar/2019 00:04:36] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [11/Mar/2019 00:05:24] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 57620): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:05:25] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 57818): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:05:30] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 57824): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 57842): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:05:57] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [11/Mar/2019 00:06:02] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 57959): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 57981): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:06:46] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 58165): [Errno 104] Connection reset by peer
+192.168.11.3 - - [11/Mar/2019 00:06:53] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [11/Mar/2019 00:07:47] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 58191): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:07:57] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 58413): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 58457): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:08:20] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 58553): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:08:48] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [11/Mar/2019 00:09:41] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 58664): [Errno 32] Broken pipe
+WARNING:root:Removed streaming client ('192.168.11.3', 58890): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:10:51] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [11/Mar/2019 00:14:35] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 59185): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:14:43] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 59348): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:22:31] "GET /stream.mjpg HTTP/1.1" 200 -
+192.168.11.3 - - [11/Mar/2019 00:22:31] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 59469): [Errno 104] Connection reset by peer
+192.168.11.3 - - [11/Mar/2019 00:24:55] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 59473): [Errno 32] Broken pipe
+192.168.11.3 - - [11/Mar/2019 00:24:55] "GET /stream.mjpg HTTP/1.1" 200 -
+WARNING:root:Removed streaming client ('192.168.11.3', 59497): [Errno 32] Broken pipe
