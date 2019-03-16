@@ -19,53 +19,78 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-4 text-center offset-4">
+        <div class="col-sm-3 text-center">
             <h2>Curiosity2</h2>
             <h5>by K. Nagakawa</h5>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-2 text-center offset-4">
-            <img src="http://192.168.11.2:8000/stream.mjpg" width="384" height="384">
+        <div class="col-sm-3 text-center">
+            <img src="http://192.168.11.2:8000/stream.mjpg" width="250" height="250">
         </div>
     </div>
+
+
     <div class="row">
-        <div class="col-md-4 text-center">
-        </div>
-        <div class="col-md-4 text-center">
-            <input type='button' value='⬆' onclick='forward()' class="btn btn-secondary"/>
-        </div>
-        <div class="col-md-4 text-center">
-        </div>
+        <table class="table table-borderless">
+            <tbody>
+            <tr>
+                <td>
+                    <div class="text-center"></div>
+                </td>
+                <td>
+                    <div class="text-center">
+                        <input type='button' value='⬆' onclick='forward()' class="btn btn-secondary"/>
+                    </div>
+                </td>
+                <td>
+                    <div class="text-center"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="text-right">
+                        <input type='button' value='⬅' onclick='left()' class="btn btn-secondary"/>
+                    </div>
+                </td>
+                <td>
+                    <div class="text-center">
+                        <input type='button' value='STOP' onclick='stop()' class="btn btn-secondary"/>
+                    </div>
+                </td>
+                <td>
+                    <div class="text-left">
+                        <input type='button' value='➡' onclick='right()' class="btn btn-secondary"/>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="text-center"></div>
+                </td>
+                <td>
+                    <div class="text-center">
+                        <input type='button' value='⬇' onclick='backward()' class="btn btn-secondary"/></div>
+                </td>
+                <td>
+                    <div class="text-center"></div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
+
     <div class="row">
-        <div class="col-md-5 text-right">
-            <input type='button' value='⬅' onclick='left()' class="btn btn-secondary"/>
-        </div>
-        <div class="col-md-2 text-center">
-            <input type='button' value='STOP' onclick='stop()' class="btn btn-secondary"/>
-        </div>
-        <div class="col-md-5 text-left">
-            <input type='button' value='➡' onclick='right()' class="btn btn-secondary"/>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 text-center">
-        </div>
-        <div class="col-md-4 text-center">
-            <input type='button' value='⬇' onclick='backward()' class="btn btn-secondary"/>
-        </div>
-        <div class="col-md-4 text-center">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 text-center offset-4">
+        <div class="col-sm-3 text-center">
             Github Repo is <a href="https://github.com/iceman-k/curiosity2">here</a>.
             <br>
             Curiosity version1 is <a href="https://en.wikipedia.org/wiki/Curiosity_(rover)">here</a>.
         </div>
     </div>
+
+
 </div>
+
 
 <script src="{% static 'js/button_click.js' %}"></script>
 
